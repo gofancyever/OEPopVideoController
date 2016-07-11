@@ -8,7 +8,8 @@
 	3 导入头文件<code> #import "OEPopVideoController.h"</code>
 	4 使用：
 </h5>
-	<pre><code>
+
+<pre>
 -(IBAction)openVideoController:(id)sender {
 	//创建 OEPopVideoController 对象
     OEPopVideoController *videoController = [[OEPopVideoController alloc] init];
@@ -19,7 +20,6 @@
     //弹出
     [videoController presentPopupControllerAnimated:YES];
 }
-
 \#pragma mark - OEPopVideoControllerDelegate
 //打包好的视频连接
 -(void)popVideoControllerDidSave:(NSString *)url{
