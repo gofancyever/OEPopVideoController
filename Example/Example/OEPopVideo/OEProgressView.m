@@ -11,6 +11,7 @@
 @implementation OEProgressView
 
 - (void)startCompletion:(void (^ __nullable)(BOOL finished))completion {
+    
     //动画有显示 视觉不同步
     [UIView animateWithDuration:self.duration-0.5 animations:^{
         self.bounds = CGRectMake(0, 0, 0, self.frame.size.height);

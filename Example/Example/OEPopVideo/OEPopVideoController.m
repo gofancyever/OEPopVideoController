@@ -197,7 +197,9 @@
 
 
 - (void)startTimer {
-    
+    if (self.videoMaxTime == 0) {
+        return;
+    }
     if (self.timer == nil) {
         _timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
     }

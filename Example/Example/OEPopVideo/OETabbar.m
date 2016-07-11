@@ -156,6 +156,9 @@
 }
 #pragma mark - 进度条
 - (void)progressStart {
+    if (self.progressDuration == 0) {
+        return;
+    }
     self.progressView.duration = self.progressDuration;
     [self.progressView startCompletion:^(BOOL finished) {
         if (finished){
@@ -165,6 +168,9 @@
 }
 
 - (void)progressResume {
+    if (self.progressDuration == 0) {
+        return;
+    }
     [self.progressView resume];
 }
 
