@@ -29,5 +29,5 @@
 -(void)popVideoControllerWillOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer {
 }
 </code></pre>
-#####如果对你有帮助别忘了 Start 如遇bug或意见欢迎Fork and 我的邮箱：pomyven@gmail.com
+#####如果对你有帮助别忘了 Star 如遇bug或意见欢迎Fork and 我的邮箱：pomyven@gmail.com
 ####录像功能需真机演示
