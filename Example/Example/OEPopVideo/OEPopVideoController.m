@@ -84,7 +84,6 @@
     _videoCamera.outputImageOrientation = [UIApplication sharedApplication].statusBarOrientation;
     
     _filter = [[GPUImageSaturationFilter alloc] init];
-    [(GPUImageSaturationFilter *)_filter setSaturation:100];
     CGRect frame = CGRectMake(0, 70, OEScreenWidth, OEScreenWidth);
     _filterView = [[GPUImageView alloc] initWithFrame:frame];
     _filterView.fillMode = kGPUImageFillModePreserveAspectRatioAndFill;
